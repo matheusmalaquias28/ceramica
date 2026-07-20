@@ -16,168 +16,244 @@ export const theme = {
 };
 
 export const offerBar = {
-  text: "OFERTA ESPECIAL DISPONÍVEL SOMENTE HOJE",
+  text: "⚡ OFERTA ESPECIAL DISPONÍVEL APENAS HOJE",
 };
 
 export const hero = {
-  logo: { src: "/v2/logo-cookie-lucrativo.png", alt: "Cookies Lucrativos", width: 142, height: 42 },
-  titleHighlight: "+R$200 POR DIA ",
-  title: "COM COOKIES ARTESANAIS EM CASA",
-  image: { src: "/img/img-hero-cookies-lucrativos.jpg", alt: "Materiais do desafio Cookies Lucrativos para vender cookies artesanais", width: 1100, height: 1100 },
+  logo: { src: "/img/logo-peca-pronta.png", alt: "Método Peça Pronta", width: 500, height: 500 },
+  titleCount: 35,
+  titleMain: "Projetos",
+  titleDetail: "De cerâmica fria",
+  titleBadge: "Pronto para modelação e criação imediata",
+  image: { src: "/img/img-principal-produto.jpeg", alt: "Método Peça Pronta — 35 projetos de cerâmica fria com bônus e peças modeladas", width: 2048, height: 2048 },
   subtitle:
-    "Você aprenderá a produzir e vender cookies artesanais na sua própria cozinha, conquistando vendas que podem gerar R$200 ou mais por dia, mesmo sem experiência anterior.",
-  ctaLabel: "QUERO COMEÇAR AGORA",
-  note: "Você não precisa abrir uma confeitaria. A maioria das primeiras vendas acontece para vizinhos, colegas de trabalho, faculdade e contatos do WhatsApp.",
+    "Você receberá uma biblioteca com 35 projetos de cerâmica fria, permitindo que você siga o passo a passo visual e comece a criar peças lindas sem improvisar.",
+  ctaLabel: "QUERO COMEÇAR A CRIAR",
+  note: "Siga o guia visual e crie sua primeira peça no mesmo dia, mesmo que nunca tenha mexido com cerâmica fria.",
   checks: [
-    "Receitas fáceis e rápidas de cookies",
-    "Estratégias de preços lucrativos",
-    "Embalagens atrativas para venda",
-    "Desafio de 7 dias para suas primeiras vendas",
-    "Suporte em grupo exclusivo",
+    "Passo a passo visual completo",
+    "Materiais acessíveis e fáceis de achar",
+    "Dicas para evitar erros e rachaduras",
+    "Sugestões de acabamentos sofisticados",
+    "Grupo de apoio exclusivo",
   ],
-  deliveryNote: "Você recebe tudo na hora, direto no seu e-mail ✉️ e 📞. É só imprimir e usar.",
+  deliveryNote: "📲 Você recebe tudo na hora, direto no seu e-mail.",
   socialProofLabel: "Mais de 2.000 aluno(a)s",
 };
 
 export const materials = {
-  title: "VEJA AS RECEITAS QUE VOCÊ VAI RECEBER JÁ!",
-  imageSize: { width: 575, height: 863 },
+  title: "Veja os projetos que você vai receber já",
+  imageSize: { width: 716, height: 1074 },
   items: [
-    { src: "/entregaveis/cookie-kitkat.jpg", alt: "Ficha da receita: Cookies KitKat" },
-    { src: "/entregaveis/cookie-nutella.jpg", alt: "Ficha da receita: Cookies Nutella" },
-    { src: "/entregaveis/cookie-oreo.jpg", alt: "Ficha da receita: Cookies Oreo" },
-    { src: "/entregaveis/cookie-ferrero-rocher.jpg", alt: "Ficha da receita: Cookies Ferrero Rocher" },
+    {
+      src: "/entregaveis/Frame 1707483104.jpg",
+      alt: "Módulo 1 — 7 peças para começar",
+      size: { width: 716, height: 1074 },
+    },
+    {
+      src: "/entregaveis/Frame 1707483105.jpg",
+      alt: "Peça 01 — Mini vaso com passo a passo",
+      size: { width: 716, height: 1074 },
+    },
+    {
+      src: "/entregaveis/Frame 1707483106.jpg",
+      alt: "Módulo 2 — 7 peças de decoração",
+      size: { width: 716, height: 1074 },
+    },
+    {
+      src: "/entregaveis/Frame 1707483107.jpg",
+      alt: "Módulo 3 — 7 peças úteis",
+      size: { width: 716, height: 1074 },
+    },
+    {
+      src: "/entregaveis/Frame 1707483108.jpg",
+      alt: "Desafio primeira peça em 7 dias",
+      size: { width: 716, height: 1074 },
+    },
+    {
+      src: "/entregaveis/Frame 1707483109.jpg",
+      alt: "Manual peça sem rachaduras",
+      size: { width: 804, height: 1074 },
+    },
   ],
 };
 
 export const testimonials = {
-  title: "Veja os depoimentos dos nossos clientes!",
-  imageSize: { width: 738, height: 1460 },
+  title: "Veja o que nossos clientes estão dizendo",
+  imageSize: { width: 738, height: 1463 },
   items: [
-    { src: "/img/feedback-1.webp", alt: "Depoimento de aluna no WhatsApp" },
-    { src: "/img/feedback-2.webp", alt: "Depoimento de aluna no WhatsApp" },
-    { src: "/img/feedback-3.webp", alt: "Depoimento de aluna no WhatsApp" },
-    { src: "/img/feedback-4.webp", alt: "Depoimento de aluna no WhatsApp" },
-    { src: "/img/feedback-5.webp", alt: "Depoimento de aluna no Instagram", size: { width: 738, height: 1312 } },
-    { src: "/img/feedback-6.webp", alt: "Depoimento de aluna no Instagram", size: { width: 738, height: 1312 } },
-    { src: "/img/feedback-7.webp", alt: "Depoimento de aluna no Instagram", size: { width: 738, height: 1312 } },
+    { src: "/feedbacks/feedbacks-1 (1).jpg", alt: "Depoimento de aluna no WhatsApp", size: { width: 738, height: 1463 } },
+    { src: "/feedbacks/feedbacks-2 (1).jpg", alt: "Depoimento de aluna no WhatsApp", size: { width: 738, height: 1463 } },
+    { src: "/feedbacks/feedbacks-3 (1).jpg", alt: "Depoimento de aluna no WhatsApp", size: { width: 738, height: 1463 } },
+    { src: "/feedbacks/stories-depoimento (1).jpg", alt: "Depoimento de aluna no Instagram Stories", size: { width: 661, height: 1174 } },
+    { src: "/feedbacks/stories-depoimento-2 (1).jpg", alt: "Depoimento de aluna no Instagram Stories", size: { width: 661, height: 1174 } },
+    { src: "/feedbacks/stories-depoimento-1 (1).jpg", alt: "Depoimento de aluna no Instagram Stories", size: { width: 661, height: 1174 } },
+  ],
+};
+
+export const studentWorks = {
+  title: "Veja algumas peças que nossas alunas produziram:",
+  items: [
+    { name: "Mariana Silva", city: "Campinas, SP", img: "/feedbacks/Instagram post - 32.jpg", width: 822, height: 1028 },
+    { name: "Fernanda Costa", city: "Curitiba, PR", img: "/feedbacks/Instagram post - 33.jpg", width: 822, height: 1028 },
+    { name: "Juliana Alves", city: "Belo Horizonte, MG", img: "/feedbacks/Instagram post - 34.jpg", width: 822, height: 1028 },
+    { name: "Camila Rocha", city: "Florianópolis, SC", img: "/feedbacks/Instagram post - 35.jpg", width: 822, height: 1028 },
+    { name: "Patrícia Mendes", city: "Goiânia, GO", img: "/feedbacks/Instagram post - 36.jpg", width: 822, height: 1028 },
+    { name: "Amanda Souza", city: "Recife, PE", img: "/feedbacks/Instagram post - 37.jpg", width: 822, height: 1028 },
   ],
 };
 
 export const whySection = {
-  title: "OS MATERIAIS DO DESAFIO COOKIES LUCRATIVOS POSSUEM:",
+  title: "Os projetos do Método Peça Pronta possuem:",
   cards: [
-    { icon: "📖", text: "Receitas testadas e aprovadas — fáceis de seguir e aplicar" },
-    { icon: "💰", text: "Orientações sobre precificação — saiba quanto cobrar" },
-    { icon: "🎁", text: "Sugestões de embalagens — atraia mais clientes com um bom visual" },
-    { icon: "🗓️", text: "Desafio de 7 dias — comece a vender rapidamente" },
-    { icon: "💬", text: "Acesso a uma comunidade de suporte — tire dúvidas e troque experiências" },
+    { icon: "📖", text: "Passo a passo visual — sem improvisos, você segue o guia facilmente" },
+    { icon: "🛒", text: "Materiais acessíveis — saiba o que comprar e onde encontrar" },
+    { icon: "✅", text: "Dicas para evitar erros — aprenda a modelar sem frustrações" },
+    { icon: "🎨", text: "Sugestões de acabamentos — deixe suas peças ainda mais sofisticadas" },
+    { icon: "🗓️", text: "Acompanhamento prático — crie sua primeira peça no mesmo dia" },
   ],
 };
 
 export const idealSection = {
-  title: "ESTE DESAFIO É IDEAL PARA VOCÊ QUE DESEJA",
+  title: "Este material é ideal para você que deseja",
   items: [
-    { title: "AUMENTAR SUA RENDA MENSAL", desc: "Ganhar até R$1.000 a mais por semana, trabalhando em casa." },
-    { title: "TRABALHAR NO SEU PRÓPRIO TEMPO", desc: "Produzir e vender cookies nas horas vagas, sem pressão." },
-    { title: "APRENDER UMA NOVA HABILIDADE", desc: "Descubra como fazer cookies deliciosos mesmo sem experiência." },
-    { title: "TER SUPORTE E COMUNIDADE", desc: "Contar com ajuda de outras confeiteiras em um grupo exclusivo." },
-    { title: "VENDER DE FORMA SIMPLES", desc: "Aprender a conquistar clientes com ações práticas e diretas." },
-    { title: "CRIAR LEMBRANÇAS GOSTOSAS", desc: "Fazer cookies que podem se tornar a sua nova fonte de renda." },
+    { title: "Começar um hobby relaxante", desc: "Desfrute de momentos criativos e relaxantes ao modelar suas peças." },
+    { title: "Criar peças únicas e pessoais", desc: "Aprenda a fazer presentes personalizados e decorações que refletem seu estilo." },
+    { title: "Aprender sem medo de errar", desc: "Siga o passo a passo e descubra como é fácil criar com cerâmica fria." },
+    { title: "Expressar sua criatividade", desc: "Transforme suas ideias em lindas peças e sinta-se realizada." },
+    { title: "Compartilhar suas criações", desc: "Mostre suas peças para amigos e familiares e ganhe reconhecimento." },
+    { title: "Montar um espaço de arte em casa", desc: "Tenha um local especial para relaxar e criar suas obras de arte." },
   ],
 };
 
 export const offerSection = {
-  title: "TUDO O QUE VOCÊ VAI RECEBER",
+  title: "Tudo o que você vai receber",
   pill: "⚡ACESSO IMEDIATO",
-  cardTitle: "TUDO FOI ORGANIZADO PARA SER SIMPLES E FÁCIL DE APLICAR.",
-  image: { src: "/img/img-hero-cookies-lucrativos.jpg", alt: "Materiais do desafio Cookies Lucrativos", width: 1100, height: 1100 },
+  cardTitle: "Tudo foi organizado para ser simples e fácil de aplicar.",
+  image: { src: "/img/img-hero-cookies-lucrativos.jpg", alt: "Materiais do Método Peça Pronta", width: 1100, height: 1100 },
   features: [
-    "Precificação: o preço certo para lucrar em cada cookie",
-    "Custos e margem: saiba quanto sobra em cada venda",
-    "Embalagens prontas que valorizam seu cookie",
-    "Como conseguir e fidelizar as primeiras clientes",
+    "Método Peça Pronta — biblioteca com 35 projetos",
+    "7 peças para iniciar sua jornada",
+    "7 peças decorativas para embelezar sua casa",
+    "7 peças úteis para o dia a dia",
+    "7 peças para presentear com amor",
+    "7 peças com acabamentos sofisticados",
   ],
   moreLabel: "E MUITO MAIS...",
-  ctaLabel: "QUERO COMEÇAR AGORA",
+  ctaLabel: "QUERO ACESSAR AGORA E USAR HOJE",
   deliveryNote: hero.deliveryNote,
 };
 
 export const bonusSection = {
-  titleLines: ["E NÃO PARA POR AÍ... TEM MAIS!", "você também vai receber:"],
-  pill: "🎁 3 BÔNUS EXCLUSIVOS",
+  titleLines: ["E não para por aí... tem mais!", "Você também vai receber:"],
+  pill: "🎁 4 BÔNUS EXCLUSIVOS",
   exclusiveNote: ["BÔNUS INCLUSO APENAS", "NO PLANO COMPLETO"],
   items: [
-    { img: "/entregaveis/bonus-instagram.webp", title: "Instagram Magnético para Confeiteiras", desc: "Como atrair clientes pelo Instagram.", price: "R$27" },
-    { img: "/entregaveis/bonus-acoes.webp", title: "20 Ações para Conseguir Clientes", desc: "Ações simples para gerar pedidos.", price: "R$27" },
-    { img: "/entregaveis/bonus-vendas.webp", title: "Comunidade Primeiras Vendas", desc: "Grupo exclusivo para networking e dúvidas.", price: "R$27" },
+    {
+      img: "/img/bonuts-ceramica (1).png",
+      width: 1024,
+      height: 1536,
+      title: "Kit Comece Hoje",
+      desc: "Materiais essenciais, quantidades iniciais, opções econômicas e checklist imprimível de compras.",
+      price: "R$27",
+    },
+    {
+      img: "/img/bonuts-ceramica (4).png",
+      width: 1024,
+      height: 1536,
+      title: "Desafio Primeira Peça em 7 Dias",
+      desc: "Um plano diário: escolher a peça, modelar, secar, pintar e finalizar sua primeira peça em uma semana.",
+      price: "R$27",
+    },
+    {
+      img: "/img/bonuts-ceramica (3).png",
+      width: 1024,
+      height: 1536,
+      title: "Manual Peça Sem Rachaduras",
+      desc: "Guia visual com espessura ideal, erros de secagem e como corrigir pequenas imperfeições.",
+      price: "R$27",
+    },
+    {
+      img: "/img/bonuts-ceramica (2).png",
+      width: 1024,
+      height: 1536,
+      title: "Acabamento de Loja",
+      desc: "Como lixar, pintar de forma uniforme, criar efeito mármore e rústico, envernizar e impermeabilizar.",
+      price: "R$27",
+    },
   ],
 };
 
 /** Itens 🎁 exibidos nas listas dos planos (tachados no Básico, inclusos no Completo). */
 export const bonusFeatures = [
-  "🎁 Instagram Magnético para Confeiteiras",
-  "🎁 20 Ações para Conseguir Clientes",
-  "🎁 Comunidade Primeiras Vendas",
+  "🎁 Kit Comece Hoje",
+  "🎁 Desafio Primeira Peça em 7 Dias",
+  "🎁 Manual Peça Sem Rachaduras",
+  "🎁 Acabamento de Loja",
 ];
 
 export const plansSection = {
   pill: "⏰ OFERTA VÁLIDA POR TEMPO LIMITADO",
-  title: "ESCOLHA A MELHOR OPÇÃO PARA VOCÊ",
+  title: "Escolha a opção ideal para você",
+  securePurchase: {
+    src: "/img/compra-segura.png",
+    alt: "Compra 100% segura — Hotmart",
+    width: 738,
+    height: 222,
+  },
   basic: {
-    name: "Plano Básico",
-    image: { src: "/entregaveis/plano-basico-cookie.jpg", alt: "Materiais do Plano Básico do desafio Cookies Lucrativos", width: 1104, height: 1104 },
-    receiveLabel: "você recebe:",
+    name: "Plano básico",
+    image: { src: "/img/plano-basico.jpeg", alt: "Materiais do plano básico do Método Peça Pronta", width: 2048, height: 2048 },
+    receiveLabel: "Você recebe:",
     features: [
-      "Receitas de Cookies Clássicos",
-      "Guia de Precificação Lucrativa",
-      "Sugestões de Embalagens Criativas",
-      "Acesso ao Desafio de 7 dias",
+      "Método Peça Pronta — 35 projetos",
+      "Acesso imediato ao material",
+      "Suporte via WhatsApp",
+      "Grupo de apoio exclusivo",
     ],
     oldPrice: "R$37,90",
     price: "R$27,90",
-    installments: "ou 4x de R$7,47 no cartão",
+    installments: "ou 4x de R$7,48 no cartão",
     savings: "🟢 você economiza R$10,00",
-    ctaLabel: "QUERO O PLANO BÁSICO!",
+    ctaLabel: "QUERO O PLANO BÁSICO",
   },
   complete: {
     badge: "🔥 ÚLTIMA CHANCE — OFERTA TERMINA HOJE",
-    name: "PLANO COMPLETO",
+    name: "Plano completo",
     allBonusesLabel: "TODOS OS BÔNUS INCLUSOS",
-    image: { src: "/img/img-hero-cookies-lucrativos.jpg", alt: "Materiais do desafio Cookies Lucrativos", width: 1100, height: 1100 },
-    pill: "⚡3X MAIS CONTEÚDOS",
+    image: { src: "/img/img-hero-cookies-lucrativos.jpg", alt: "Materiais do Método Peça Pronta", width: 1100, height: 1100 },
+    pill: "⚡4X MAIS CONTEÚDOS",
     features: [
-      "Receitas de cookies clássicos e gourmet.",
-      "Guia de precificação lucrativa.",
-      "Sugestões de embalagens criativas.",
-      "Desafio de 7 dias para suas primeiras vendas.",
-      "Acesso à comunidade de suporte.",
+      "Método Peça Pronta — 35 projetos",
+      "Acesso imediato ao material",
+      "Suporte via WhatsApp",
+      "Grupo de apoio exclusivo",
     ],
     oldPrice: "R$67,90",
     price: "R$37,90",
-    installments: "ou 6x de R$6,35 no cartão",
+    installments: "ou 6x de R$7,48 no cartão",
     savings: "🟢 você economiza R$30,00",
-    ctaLabel: "QUERO O PLANO COMPLETO!",
+    ctaLabel: "QUERO O PLANO COMPLETO",
   },
   upsellNote: {
     alert: "AINDA DÁ TEMPO DE LEVAR A MELHOR OPÇÃO!",
-    body: "Leve mais e pague menos, 97% escolhem a nossa",
+    body: "92% das pessoas aproveitam a nossa",
     highlight: "SUPER OFERTA!",
   },
   paybackBadge: {
-    title: "UMA ÚNICA VENDA PODE PAGAR O VALOR DO PACOTE INTEIRO.",
-    subtitle: "Todo o resto vira lucro.",
+    title: "Tudo o que você precisa para criar sua primeira peça ainda hoje.",
+    subtitle: "Acesso imediato e vitalício.",
   },
 };
 
 export const guarantee = {
   seal: { src: "/img/guarantee-seal.webp", alt: "Selo de garantia de 7 dias", width: 241, height: 242 },
-  title: "Compra 100% Segura e Garantida!",
-  intro: "SEU INVESTIMENTO É TOTALMENTE SEGURO",
+  title: "Garantia de 7 Dias",
+  intro: "🔒 COMPRA 100% SEGURA E GARANTIDA",
   lead: "Isso significa que, a qualquer momento, se você achar que:",
   bullets: [
-    "o material não faz sentido para suas vendas.",
-    "as receitas não atendem suas expectativas.",
+    "o material não faz sentido para você.",
+    "os projetos não atendem suas expectativas.",
     "ou simplesmente não quiser continuar.",
   ],
   outro: "Você pode solicitar o reembolso. Sem prazo, sem burocracia.",
@@ -190,56 +266,47 @@ export const contact = {
 };
 
 export const stepsSection = {
-  title: "Como funciona o acesso:",
-  subtitle: "(passo a passo)",
-  ctaLabel: "QUERO ACESSAR AGORA!",
+  title: "Como é o acesso",
+  subtitle: "(Siga os passos e comece a criar!)",
+  ctaLabel: "QUERO COMEÇAR AGORA",
   steps: [
     {
       icon: "🛒",
       title: "Conclua sua compra",
       desc: "Após o pagamento, seu acesso é liberado automaticamente.",
-      items: ["Você recebe um e-mail de confirmação.", "Acesse a área de membros."],
+      items: ["Receba o material por e-mail.", "Acesse o grupo de apoio.", "Prepare seu espaço para criar."],
     },
     {
       icon: "📱",
-      title: "Entre na área de membros",
-      desc: "Acesse o conteúdo exclusivo do desafio.",
-      items: ["Receitas e guias disponíveis.", "Suporte em grupo para dúvidas.", "Networking com outras confeiteiras."],
+      title: "Escolha seu projeto",
+      desc: "Veja os projetos disponíveis e escolha o que mais gosta.",
+      items: ["Acesse a biblioteca de projetos.", "Leia as instruções.", "Separe os materiais necessários."],
     },
     {
-      icon: "📁",
-      title: "Baixe os arquivos",
-      desc: "Tenha acesso a todos os materiais prontos.",
-      items: ["Receitas em formato PDF.", "Guias prontos para impressão.", "Conteúdo acessível sempre que precisar."],
+      icon: "🏺",
+      title: "Comece a modelar",
+      desc: "Siga o passo a passo e comece a criar sua peça.",
+      items: ["Modelagem da peça.", "Acompanhamento da secagem.", "Finalização e pintura."],
     },
     {
-      icon: "🍪",
-      title: "Use e aplique",
-      desc: "Comece a produzir e vender seus cookies.",
-      items: ["Imprima as receitas.", "Prepare os cookies.", "Venda e veja sua renda aumentar."],
+      icon: "📸",
+      title: "Compartilhe suas criações",
+      desc: "Mostre suas peças para o grupo e receba feedback.",
+      items: ["Fotografe suas peças.", "Publique no grupo.", "Inspire outras pessoas."],
     },
   ],
 };
 
 export const faq: readonly (readonly [string, string])[] = [
-  ["Nunca fiz cookies. Esse material é para mim?", "Sim! O método foi pensado para iniciantes: as receitas trazem o passo a passo completo, com técnicas explicadas do zero."],
-  ["Preciso ter experiência na cozinha?", "Não. Você só precisa seguir as receitas — os segredos da massa, preparo e modelagem estão detalhados no material."],
-  ["Quanto preciso investir para começar?", "Muito pouco. Os ingredientes são fáceis de encontrar em qualquer mercado e você pode começar com o que já tem na sua cozinha."],
-  ["Quanto posso ganhar vendendo cookies?", "Depende do quanto você produz e vende. Para ter uma referência: um cookie gourmet é vendido em média entre R$10 e R$16, com custo de produção bem menor que isso. O material inclui a planilha de precificação e margem para você saber exatamente seu lucro por fornada."],
-  ["Como vou receber o material?", "Imediatamente após a compra, direto no seu e-mail. É só baixar, imprimir e usar."],
-  ["O acesso é vitalício?", "Sim! Você paga uma única vez e o material é seu para sempre."],
-  ["Os bônus estão inclusos?", "Os 4 bônus exclusivos estão inclusos apenas no Plano Completo."],
-  ["Posso assistir pelo celular?", "Sim, o material funciona em celular, computador e tablet."],
-  ["E se eu não gostar do material?", "Você tem 7 dias de garantia total. Basta pedir o reembolso e devolvemos todo o valor pago."],
-  ["A compra é segura?", "Totalmente. O pagamento é processado por plataforma segura e seus dados ficam protegidos."],
-  ["Funciona para quem mora em cidade pequena?", "Sim! Em cidades pequenas a concorrência é menor e o boca a boca funciona ainda mais rápido. Vizinhos, escolas, comércios e eventos locais são ótimos pontos de venda."],
-  ["Eu sou tímida, não sei vender nem abordar as pessoas", "Sem problema. O bônus de como conseguir os primeiros clientes traz estratégias simples que não dependem de abordagem: você pode vender pelo WhatsApp, Instagram e por indicação — o produto chama atenção sozinho."],
-  ["Tenho pouco tempo no meu dia, dá para vender mesmo assim?", "Dá sim. Você pode produzir em poucas horas nos horários livres ou finais de semana. A massa pode ser feita com antecedência, e você pode trabalhar por encomenda, produzindo só o que já foi vendido, sem desperdício."],
-  ["Preciso ter muitos equipamentos para começar?", "Não. Forno, batedeira (ou até mesmo as mãos), tigelas e assadeiras que você provavelmente já tem em casa são suficientes para começar."],
-  ["Por que esse material é diferente de uma simples receita de Cookie?", "Porque receita sozinha não gera renda. Aqui você recebe 100 receitas validadas + o passo a passo do negócio: precificação, cálculo de custos, embalagens e estratégias para conseguir e fidelizar clientes."],
+  ["Preciso ter experiência em cerâmica para começar?", "Não, o método é feito para iniciantes e você receberá um passo a passo claro."],
+  ["Os materiais são fáceis de encontrar?", "Sim, indicamos materiais acessíveis e fáceis de encontrar."],
+  ["O acesso é imediato?", "Sim, você recebe tudo na hora após a confirmação do pagamento."],
+  ["E se eu não gostar do material?", "Você tem 7 dias para solicitar o reembolso, sem burocracia."],
+  ["Posso compartilhar os projetos com amigos?", "Os projetos são para uso pessoal, mas você pode mostrar suas criações."],
+  ["O que faço se tiver dúvidas?", "Você pode entrar em contato pelo suporte via e-mail."],
 ];
 
 export const footer = {
   legal:
-    "Este site não possui qualquer vínculo com Facebook, Google ou qualquer outra plataforma mencionada. Todos os direitos da obra “Desafio Cookies Lucrativos” são reservados ao seu autor. A reprodução não autorizada, total ou parcial, por qualquer meio, constitui violação de direitos autorais e pode resultar em sanções civis e criminais, de acordo com a legislação aplicável.",
+    "Este site não possui qualquer vínculo com Facebook, Google ou qualquer outra plataforma mencionada. Todos os direitos sobre a obra “Método Peça Pronta” são reservados ao seu autor, nos termos da Lei nº 9.610/98 (Lei de Direitos Autorais). A reprodução não autorizada, total ou parcial, por qualquer meio, constitui violação de direitos autorais e pode resultar em sanções civis e criminais, de acordo com a legislação aplicável.",
 };

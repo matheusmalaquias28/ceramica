@@ -1,16 +1,19 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #6d4aff;
+  --color-accent: #d07771;
+  --color-ink: #654e3d;
+  --color-muted: #959c79;
+  --color-surface: color-mix(in srgb, #959c79 14%, white);
+  --color-brand: #914c2e;
   --color-cta: #00db6a;
   --color-badge: #07c707;
-  --color-ink: #242424;
   --color-dark: #131313;
   --color-navy: #041774;
   --color-alert: #e30000;
-  --color-muted: #757575;
-  --font-display: var(--font-fredoka);
-  --font-sans: var(--font-manrope);
+  --font-heading: var(--font-manrope);
+  --font-display: var(--font-poppins);
+  --font-sans: var(--font-poppins);
 }
 
 html {
@@ -23,9 +26,9 @@ body {
 }
 
 body {
-  background: #fff;
+  background: color-mix(in srgb, #959c79 6%, white);
   color: var(--color-ink);
-  font-family: var(--font-manrope), sans-serif;
+  font-family: var(--font-poppins), sans-serif;
 }
 
 /* Carrossel contínuo: a trilha contém 2 cópias da lista e desloca metade do próprio comprimento */
@@ -118,5 +121,8 @@ details[open] .faq-chevron {
   *::after {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
+  }
+  .cta-pulse {
+    animation: none !important;
   }
 }
