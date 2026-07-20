@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Manrope, Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Gtm } from "@/components/Gtm";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -73,7 +72,6 @@ export default function RootLayout({
           }}
         />
         {children}
-        <Gtm />
         <Analytics />
         <SpeedInsights />
       </body>
