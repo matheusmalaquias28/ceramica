@@ -1,11 +1,12 @@
 "use client";
 
+import { track } from "@/components/Gtm";
 import { fbTrackCustom } from "@/components/MetaPixel";
 
 type Props = {
   href: string;
   label: string;
-  /** Identificador da posição do CTA na página, enviado ao Pixel. */
+  /** Identificador da posição do CTA na página, enviado ao dataLayer e ao Pixel. */
   id: string;
   /** Nome do plano ("Basico" | "Completo"): dispara o evento CtaPlano<nome> no Pixel. O InitiateCheckout fica por conta da Hotmart, para não duplicar. */
   planName?: string;
@@ -17,6 +18,7 @@ export function CtaButton({ href, label, id, planName, className = "" }: Props) 
     <a
       href={href}
       onClick={() => {
+        track("cta_click", { cta_id: id, cta_label: label });
         if (planName) {
           fbTrackCustom(`CtaPlano${planName}`, { cta_id: id, cta_label: label });
         } else {
