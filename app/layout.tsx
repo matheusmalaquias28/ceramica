@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Gtm } from "@/components/Gtm";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -26,13 +27,17 @@ export const metadata: Metadata = {
       "35 projetos prontos, materiais acessíveis, dicas de acabamento e desafio de 7 dias para criar sua primeira peça ainda hoje.",
     locale: "pt_BR",
     type: "website",
-    images: [{ url: "/img/logo-desafio-cookie-lucrativos.png", width: 828, height: 828 }],
+    images: [{ url: "/img/logo-peca-pronta.png", width: 1024, height: 1024, alt: "Método Peça Pronta" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/img/logo-peca-pronta.png"],
   },
   robots: { index: true, follow: true },
   icons: {
-    icon: "/img/logo-desafio-cookie-lucrativos.png?v=3",
-    shortcut: "/img/logo-desafio-cookie-lucrativos.png?v=3",
-    apple: "/img/logo-desafio-cookie-lucrativos.png?v=3",
+    icon: "/img/logo-peca-pronta.png",
+    shortcut: "/img/logo-peca-pronta.png",
+    apple: "/img/logo-peca-pronta.png",
   },
 };
 
@@ -72,6 +77,7 @@ export default function RootLayout({
           }}
         />
         {children}
+        <Gtm />
         <Analytics />
         <SpeedInsights />
       </body>

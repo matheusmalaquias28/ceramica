@@ -13,16 +13,32 @@ type Props = {
   className?: string;
 };
 
+function isCheckoutLink(href: string) {
+  return href.startsWith("http://") || href.startsWith("https://");
+}
+
 export function CtaButton({ href, label, id, planName, className = "" }: Props) {
+  const checkout = isCheckoutLink(href);
+
   return (
     <a
       href={href}
-      onClick={() => {
+      {...(checkout ? { target: "_self", rel: "noopener" } : {})}
+      onClick={(e) => {
+        if (checkout) {
+          e.preventDefault();
+          e.stopPropagation();
+        }
+
         track("cta_click", { cta_id: id, cta_label: label });
         if (planName) {
           fbTrackCustom(`CtaPlano${planName}`, { cta_id: id, cta_label: label });
         } else {
           fbTrackCustom("CtaClick", { cta_id: id, cta_label: label });
+        }
+
+        if (checkout) {
+          window.location.assign(e.currentTarget.href);
         }
       }}
       className={`cta-pulse flex h-[60px] w-full max-w-[365px] items-center justify-center bg-cta font-display text-[24px] font-semibold text-white ${className}`}

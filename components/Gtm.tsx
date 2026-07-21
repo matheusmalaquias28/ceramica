@@ -30,7 +30,8 @@ export function Gtm() {
     window.dataLayer = window.dataLayer || [];
     if (!GTM_ID) return;
 
-    const events: (keyof WindowEventMap)[] = ["scroll", "pointerdown", "keydown", "touchstart"];
+    // Sem pointerdown: ele dispara no mesmo gesto do clique e o GTM pode interceptar o redirect.
+    const events: (keyof WindowEventMap)[] = ["scroll", "keydown", "touchstart"];
     const onFirstInteraction = () => {
       loadGtm();
       events.forEach((e) => removeEventListener(e, onFirstInteraction));
