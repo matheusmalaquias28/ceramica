@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Manrope, Poppins } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Gtm } from "@/components/Gtm";
+import { META_PIXEL_ID } from "@/components/MetaPixel";
 import "./globals.css";
 
 const manrope = Manrope({
@@ -49,13 +51,25 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${poppins.variable} ${manrope.variable} antialiased`}>
       <body>
+        <Script id="meta-pixel" strategy="beforeInteractive">
+          {`!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','${META_PIXEL_ID}');fbq('track','PageView');`}
+        </Script>
+        <noscript>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            height="1"
+            width="1"
+            style={{ display: "none" }}
+            alt=""
+            src={`https://www.facebook.com/tr?id=${META_PIXEL_ID}&ev=PageView&noscript=1`}
+          />
+        </noscript>
         {/* Pixel Utmify */}
         <script
           dangerouslySetInnerHTML={{
             __html: `window.pixelId = "6a5c54a45d579e7b97aaf4ce";
     var a = document.createElement("script");
     a.setAttribute("async", "");
-    a.setAttribute("defer", "");
     a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
     document.head.appendChild(a);`,
           }}
