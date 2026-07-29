@@ -131,7 +131,7 @@ export const offerSection = {
   title: "Tudo o que você vai receber",
   pill: "⚡ACESSO IMEDIATO",
   cardTitle: "Tudo foi organizado para ser simples e fácil de aplicar.",
-  image: { src: "/img/img-hero-cookies-lucrativos.jpg", alt: "Materiais do Método Peça Pronta", width: 1100, height: 1100 },
+  image: { src: "/img/NOVA-IMG-HERO.webp", alt: "Materiais do Método Peça Pronta", width: 1080, height: 1080 },
   features: [
     "Método Peça Pronta — biblioteca com 35 projetos",
     "7 peças para iniciar sua jornada",

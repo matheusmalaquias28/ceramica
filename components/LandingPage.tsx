@@ -276,8 +276,8 @@ export function LandingPage({ content, trackingPrefix = "" }: Props) {
             <span>{offerSection.cardTitle}</span>
           </h3>
           <Image
-            src={hero.image.src}
-            alt={hero.image.alt}
+            src={offerSection.image.src}
+            alt={offerSection.image.alt}
             width={offerSection.image.width}
             height={offerSection.image.height}
             sizes="(max-width: 480px) 95vw, 383px"

@@ -130,7 +130,7 @@ export const offerSection = {
   title: "Tudo o que você vai receber",
   pill: "⚡ACESSO IMEDIATO",
   cardTitle: "Tudo foi organizado para ser simples e fácil de aplicar.",
-  image: { src: "/img/img-hero-cookies-lucrativos.jpg", alt: "Materiais do Método Peça Pronta", width: 1100, height: 1100 },
+  image: { src: "/img/img-principal-produto.jpeg", alt: "Materiais do Método Peça Pronta", width: 2048, height: 2048 },
   features: [
     "Método Peça Pronta — biblioteca com 35 projetos",
     "7 peças para iniciar sua jornada",
@@ -221,7 +221,7 @@ export const plansSection = {
     badge: "🔥 ÚLTIMA CHANCE — OFERTA TERMINA HOJE",
     name: "Plano completo",
     allBonusesLabel: "TODOS OS BÔNUS INCLUSOS",
-    image: { src: "/img/img-hero-cookies-lucrativos.jpg", alt: "Materiais do Método Peça Pronta", width: 1100, height: 1100 },
+    image: { src: "/img/img-principal-produto.jpeg", alt: "Materiais do Método Peça Pronta", width: 2048, height: 2048 },
     pill: "⚡4X MAIS CONTEÚDOS",
     features: [
       "Método Peça Pronta — 35 projetos",
