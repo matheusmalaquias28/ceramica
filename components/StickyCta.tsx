@@ -4,13 +4,20 @@ import { useEffect, useState } from "react";
 import { track } from "@/components/Gtm";
 import { fbTrackCustom } from "@/components/MetaPixel";
 
+type Props = {
+  /** Prefixo nos IDs de tracking (ex.: "v2_" para separar no GTM/Pixel). */
+  trackingPrefix?: string;
+  label?: string;
+};
+
 /**
  * CTA fixo no rodapé do mobile: aparece depois que o hero sai da tela
  * e some enquanto o card do Plano Completo está visível (para não cobrir o botão real).
  */
-export function StickyCta() {
+export function StickyCta({ trackingPrefix = "", label = "QUERO COMEÇAR AGORA" }: Props) {
   const [pastHero, setPastHero] = useState(false);
   const [planVisible, setPlanVisible] = useState(false);
+  const ctaId = `${trackingPrefix}sticky_mobile`;
 
   useEffect(() => {
     const hero = document.querySelector("main > section");
@@ -38,12 +45,12 @@ export function StickyCta() {
         href="#plano-completo"
         tabIndex={show ? 0 : -1}
         onClick={() => {
-          track("cta_click", { cta_id: "sticky_mobile", cta_label: "QUERO COMEÇAR AGORA" });
-          fbTrackCustom("CtaClick", { cta_id: "sticky_mobile", cta_label: "QUERO COMEÇAR AGORA" });
+          track("cta_click", { cta_id: ctaId, cta_label: label });
+          fbTrackCustom("CtaClick", { cta_id: ctaId, cta_label: label });
         }}
         className="mx-auto flex h-[56px] w-full max-w-[420px] items-center justify-center rounded-full bg-cta font-display text-[20px] font-semibold text-white shadow-[0_8px_24px_rgba(0,0,0,0.25)] active:scale-[0.98]"
       >
-        QUERO COMEÇAR AGORA
+        {label}
       </a>
     </div>
   );

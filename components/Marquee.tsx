@@ -41,6 +41,7 @@ export function Marquee({
               width={(it.size ?? imageSize).width}
               height={(it.size ?? imageSize).height}
               sizes={`${itemWidth + 2}px`}
+              loading={copy === 1 ? "lazy" : i > 1 ? "lazy" : undefined}
               className="shrink-0 rounded-[7px] object-cover"
               style={{ width: itemWidth }}
             />

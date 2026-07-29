@@ -36,6 +36,7 @@ export function StudentWorksCarousel({ items, itemWidth = 300, duration = 36 }: 
                 width={item.width}
                 height={item.height}
                 sizes={`${itemWidth}px`}
+                loading={copy === 1 || i > 0 ? "lazy" : undefined}
                 className="aspect-[4/5] w-full rounded-[10px] border border-[color-mix(in_srgb,#959c79_25%,white)] object-cover"
                 aria-hidden={copy === 1}
               />

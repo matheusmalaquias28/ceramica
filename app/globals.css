@@ -16,6 +16,10 @@
   --font-sans: var(--font-poppins);
 }
 
+.font-nunito {
+  font-family: var(--font-nunito), sans-serif;
+}
+
 html {
   scroll-behavior: smooth;
 }
